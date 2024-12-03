@@ -1,0 +1,73 @@
+/* General container styling */
+.constainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Calculator styling */
+.calculator {
+  width: 300px;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Input field for display */
+.calculator input[type="text"] {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #444;
+  border: none;
+  border-radius: 5px;
+  text-align: right;
+}
+
+/* Styling for the buttons */
+.calculator input[type="button"] {
+  width: 65px;
+  height: 50px;
+  margin: 5px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #555;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for buttons */
+.calculator input[type="button"]:hover {
+  background-color: #777;
+}
+
+/* Special styling for "AC" and "=" buttons */
+.calculator input[value="AC"] {
+  background-color: #ff5555;
+}
+
+.calculator input[value="AC"]:hover {
+  background-color: #ff7777;
+}
+
+.calculator input[value="="] {
+  background-color: #4caf50;
+}
+
+.calculator input[value="="]:hover {
+  background-color: #66bb6a;
+}
+
+/* Styling for the rows of buttons */
+.calculator div {
+  display: flex;
+  justify-content: space-between;
+}
